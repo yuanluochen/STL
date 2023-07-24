@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/yuanluochen/code/STL/build",
+  "command": "/usr/bin/c++ -g -o CMakeFiles/vector.dir/main.cpp.o -c /home/yuanluochen/code/STL/vector/main.cpp",
+  "file": "/home/yuanluochen/code/STL/vector/main.cpp"
+}
+]
