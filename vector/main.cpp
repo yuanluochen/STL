@@ -189,5 +189,56 @@ int main()
 
     //iterator
 
+    // std::vector<int> vecA;
+    // int arrary[] = {100, 1, 20, 30, 40};
+
+    // vecA.assign(arrary, arrary + 5);
+
+    // //构造一个迭代器对象
+    // std::vector<int>::iterator it;
+    // it = vecA.begin();
+
+    // //std::cout << *it << std::endl;  
+
+    // //通过循环的方式使用迭代器遍历 vecA 中所有元素, 迭代器可以像指针一样自增
+    // for (it = vecA.begin(); it != vecA.end(); it++)
+    //     std::cout << *it << " ";
+    // std::cout << std::endl;
+
+    // it = vecA.begin();
+    // std::cout << it[2] << std::endl;
+
+    // std::vector<int> v;
+    // v.push_back(1);
+    // v.push_back(2);
+    // v.push_back(3);
+    // v.push_back(4);
+
+    // std::vector<int>::iterator it = v.begin() + 3;
+    // std::cout << *it << std::endl;
+    // v.insert(it, 8);
+    
+    // for (it = v.begin(); it != v.end(); it++)
+    //     std::cout << *it << " ";
+    // std::cout << std::endl;
+
+    std::vector<int> cond = {0, 1, 2, 3, 3, 3, 3, 3, 3, 4, 5};
+    //建立一个迭代器
+    std::vector<int>::iterator it;
+    for (it = cond.begin(); it != cond.end();)
+    {
+        if (*it == 3)
+            it = cond.erase(it);
+        else
+            it++;
+    }
+
+    for (it = cond.begin(); it != cond.end(); it++)
+        std::cout << *it << " ";
+    std::cout << std::endl;
+
+    for (int i = 0; i < cond.size(); i++)
+        std::cout << cond.at(i) << " ";
+    std::cout << std::endl;
     return 0;
 }
