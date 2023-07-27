@@ -222,23 +222,23 @@ int main()
     //     std::cout << *it << " ";
     // std::cout << std::endl;
 
-    std::vector<int> cond = {0, 1, 2, 3, 3, 3, 3, 3, 3, 4, 5};
-    //建立一个迭代器
-    std::vector<int>::iterator it;
-    for (it = cond.begin(); it != cond.end();)
-    {
-        if (*it == 3)
-            it = cond.erase(it);
-        else
-            it++;
-    }
+    // std::vector<int> cond = {0, 1, 2, 3, 3, 3, 3, 3, 3, 4, 5};
+    // //建立一个迭代器
+    // std::vector<int>::iterator it;
+    // for (it = cond.begin(); it != cond.end();)
+    // {
+    //     if (*it == 3)
+    //         it = cond.erase(it);
+    //     else
+    //         it++;
+    // }
 
-    for (it = cond.begin(); it != cond.end(); it++)
-        std::cout << *it << " ";
-    std::cout << std::endl;
+    // for (it = cond.begin(); it != cond.end(); it++)
+    //     std::cout << *it << " ";
+    // std::cout << std::endl;
 
-    for (int i = 0; i < cond.size(); i++)
-        std::cout << cond.at(i) << " ";
-    std::cout << std::endl;
+    // for (int i = 0; i < cond.size(); i++)
+    //     std::cout << cond.at(i) << " ";
+    // std::cout << std::endl;
     return 0;
 }
