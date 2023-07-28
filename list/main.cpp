@@ -143,22 +143,29 @@ int main()
     //     std::cout << *it3 << " ";
     // std::cout << std::endl;
     // return 0;
-    std::list<int> ls = {1, 2, 3, 4, 5, 6};
+    std::list<int> ls = {1, 2, 3, 4, 5, 6, 3, 3, 4};
     std::list<int>::iterator it = ls.begin();
-    for (it = ls.begin(); it != ls.end(); it++)
+    // for (it = ls.begin(); it != ls.end(); it++)
+    // {
+    //     if (*it == 3)
+    //     {
+    //         it = ls.erase(it);//it失效了无法循环
+    //         // std::cout << "it: " << *it << std::endl;
+    //         // std::cout << "it2: " << *it2 << std::endl;
+    //     }
+    // }
+
+    for (std::list<int>::iterator it2 = ls.begin(); it2 != ls.end();)
     {
-        if (*it == 3)
-        {
-            it = ls.erase(it);//it失效了无法循环
-            // std::cout << "it: " << *it << std::endl;
-            // std::cout << "it2: " << *it2 << std::endl;
-        }
+        if (*it2 == 3)
+            it2 = ls.erase(it2);
+        else 
+            it2++;
     }
 
     for (it = ls.begin(); it != ls.end(); it++)
         std::cout << *it << " ";
     std::cout << std::endl;
-    
 
     return 0;
 
