@@ -1,3 +1,0 @@
-/home/yuanluochen/code/STL/build/CMakeFiles/vector.dir
-/home/yuanluochen/code/STL/build/CMakeFiles/edit_cache.dir
-/home/yuanluochen/code/STL/build/CMakeFiles/rebuild_cache.dir
